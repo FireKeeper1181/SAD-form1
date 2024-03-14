@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+         
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center; /* Center the containers horizontally */
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 400px;
+            margin-right: 20px; /* Add margin to create space between containers */
+        }
+
+        .profile {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 20px;
+        }
+
+        .profile:last-child {
+            border-bottom: none;
+        }
+
+        h3 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin: 5px 0;
+            color: #666;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        strong {
+            color: #333;
+        }
+
+        .department {
+            margin-top: 30px;
+            border-top: 1px solid #e0e0e0;
+            padding-top: 20px;
+        }
+
+        .department h3 {
+            color: #333;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .department p {
+            color: #666;
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        /* Added styling for manage buttons */
+        .manage-buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .manage-buttons input[type="button"] {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .manage-buttons input[type="button"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="profile">
+            <h3>John Doe</h3>
+            <p><strong>Staff ID:</strong> 12345</p>
+            <p><strong>Gender:</strong> Male</p>
+            <p><strong>Age:</strong> 35</p>
+        </div>
+
+
+        <div class="department">
+            <h3>Department</h3>
+            <p><strong>Department Name:</strong> Sales</p>
+            <p><strong>Department ID:</strong> 101</p>
+            <p><strong>Phone Number:</strong> +1 123-456-7890</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Manage: </h2>
+        <div class="manage-buttons">
+            <input type="button" class="mng" value="ROOMS">
+            <input type="button" class="mng" value="BILLS">
+            <input type="button" class="mng" value="FEEDBACKS"> <!-- Added button for feedbacks -->
+        </div>
+    </div>
+</body>
+
+</html>

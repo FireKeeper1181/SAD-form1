@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Rooms</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center; /* Center the container horizontally */
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 600px;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .available {
+            background-color: green;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .occupied {
+            background-color: red;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .book-btn {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h3>Booking Date</h3>
+            <p>From <input type="date" id="date" name="date" required> <br> Until <input type="date" id="date" name="date" required> <br></p>
+        </div>
+        <h2>Rooms</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Room Number</th>
+                    <th>Room Category</th>
+                    <th>Price (RM)</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>101</td>
+                    <td>Standard</td>
+                    <td>100</td>
+                    <td><a class="book-btn" href="#" ><span class="available">Available</span></a></td>
+                </tr>
+                <tr>
+                    <td>102</td>
+                    <td>Deluxe</td>
+                    <td>150</td>
+                    <td><span class="occupied">Occupied</span></td>
+                </tr>
+                <tr>
+                    <td>103</td>
+                    <td>Standard</td>
+                    <td>100</td>
+                    <td><a class="book-btn" href="#"><span class="available">Available</span></a></td>
+                </tr>
+                <tr>
+                    <td>104</td>
+                    <td>Deluxe</td>
+                    <td>150</td>
+                    <td><span class="occupied">Occupied</span></td>
+                </tr>
+                <tr>
+                    <td>105</td>
+                    <td>Standard</td>
+                    <td>100</td>
+                    <td><a class="book-btn" href="#"><span class="available">Available</span></a></td>
+                </tr>
+                <tr>
+                    <td>106</td>
+                    <td>Executive Suite</td>
+                    <td>250</td>
+                    <td><a class="book-btn" href="#"><span class="available">Available</span></a></td>
+                </tr>
+                <tr>
+                    <td>107</td>
+                    <td>Standard</td>
+                    <td>100</td>
+                    <td><a class="book-btn" href="#"><span class="available">Available</span></a></td>
+                </tr>
+                <tr>
+                    <td>108</td>
+                    <td>Deluxe</td>
+                    <td>150</td>
+                    <td><span class="occupied">Occupied</span></td>
+                </tr>
+                <tr>
+                    <td>109</td>
+                    <td>Standard</td>
+                    <td>100</td>
+                    <td><span class="occupied">Occupied</span></td>
+                </tr>
+                <tr>
+                    <td>110</td>
+                    <td>Executive Suite</td>
+                    <td>250</td>
+                    <td><span class="occupied">Occupied</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
